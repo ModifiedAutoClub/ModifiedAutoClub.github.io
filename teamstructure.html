@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <title>Members</title>
+  <style>
+    body{
+        background-color: #434343;
+            background-image: url("./team_back.jpg");
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+    }
+        #nav{
+            background-color: rgb(12, 11, 11) !important;
+        }
+        *,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  
+  border: 0 none;
+    
+  -webkit-transition: all ease .4s;
+  -moz-transition: all ease .4s;
+    transition: all ease .4s;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+    
+  /* background: #ec0039; */
+    
+  /* font-family: 'Fjalla One', sans-serif; */
+  /* font-size: 12px; */
+}
+
+h1 {
+  padding-top: 40px;
+    
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+     
+    text-shadow: rgba(0,0,0,0.6) 1px 0, rgba(0,0,0,0.6) 1px 0, rgba(0,0,0,0.6) 0 1px, rgba(0,0,0,0.6) 0 1px;
+}
+
+.nav {
+  margin: 20px auto;
+  width: auto;
+  min-height: auto;
+  justify-content: space-around;
+}
+
+.nav ul {
+  position: relative;
+  padding-top: 20px; 
+}
+
+.nav li {
+  position: relative;
+  padding: 20px 0px 0 0px; 
+  float: left; 
+  
+  text-align: center;
+  list-style-type: none; 
+}
+
+.nav li::before, .nav li::after{
+  content: '';
+  position: absolute; 
+  top: 0; 
+  right: 50%;
+  width: 50%; 
+  height: 20px;
+  border-top: 1px solid white;
+}
+
+.nav li::after{
+  left: 50%;
+  right: auto; 
+  
+  border-left: 1px solid white;
+}
+
+.nav li:only-child::after, .nav li:only-child::before {
+  content: '';
+  display: none;
+}
+
+.nav li:only-child{ padding-top: 0;}
+.nav li:first-child::before, .nav li:last-child::after{
+  border: 0 none;
+}
+
+.nav li:last-child::before{
+  border-right: 1px solid white;
+  border-radius: 0 5px 0 0;
+}
+
+.nav li:first-child::after{
+    border-radius: 5px 0 0 0;
+}
+.nav ul ul::before{
+  content: '';
+  position: absolute; top: 0; left: 50%;
+  border-left: 1px solid white;
+  width: 0; 
+  height: 20px;
+}
+
+.nav li a{
+  display: inline-block;
+  padding: 5px 10px;
+  
+  border-radius: 5px;
+  border: 1px solid white;
+  
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: arial, verdana, tahoma;
+  font-size: 14px;
+
+}
+
+.nav li a:hover, .nav li a:hover+ul li a{
+  color: white;
+  /* background: #343a40;    */
+  /* border: 1px solid #94a0b4; */
+}
+
+.nav li a:hover+ul li::after, 
+.nav li a:hover+ul li::before, 
+.nav li a:hover+ul::before, 
+.nav li a:hover+ul ul::before{
+  content: '';
+  /* border-color: #000000; */
+}
+pre{
+    margin-bottom: 0;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+#modify1:after{
+  content: '';
+  border-top: 1px solid white;
+}
+#modify1:before{
+  border-radius: 0px;
+}
+#modify2:after{
+  border-radius: 0px;
+}
+#modify2:before{
+  content: '';
+  border-top: 1px solid white;
+}
+footer{
+            background-color: rgb(12, 11, 11) !important;
+            color: white;
+        }
+#container{
+  background-image: url("./team_back.jpg");
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <img src="./logos/MAC Logo-1.2.png" width="120" height="auto" class="d-inline-block align-top" alt="">
+    <img src="./logos/APsit logo.png" width="90" height="auto" class="d-inline-block align-top" alt="">
+</nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-1" id="nav">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                TEAM
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./mentor.html">Team Mentor</a>
+                <a class="dropdown-item" href="./teamstructure.html">Team Structure</a>
+                <a class="dropdown-item" href="./Members/pagination.html">Team Members</a>
+              </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+<div class="container" id="container">    
+    <h1>Team Structure</h1>
+<nav class="nav">
+			<ul>
+				<li>
+					<a href="#">Faculty Advisor</a>
+					<ul>
+						<li>
+							<a href="#">Team Admin</a>
+							<ul>
+                <li>
+                    <a href="#">Captain</a>
+                    <ul>
+                        <li>
+                            <a href="#">Vice Captain</a>
+                            <ul>
+                              <li>
+                                <a href="#">Team Manager</a>
+                                <ul>
+                                  <li>
+                                    <a href="#">Vehicle Dynamics Head</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Structural Head</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Electrical Head</a>
+                                  </li>
+                                  <li id="modify1">
+                                    <a href="#">Powertrain Head</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">Technical Head</a>
+                                <ul>
+                                  <li id="modify2">
+                                    <a href="#">Software Integration Head</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Composites Head</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Marketing Head</a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+		</nav>
+
+  </nav>
+  <h1>Department Structure</h1>
+<nav class="nav mb-0">
+  <ul>
+      <li>
+          <a href="#">Department Head</a>
+          <ul>
+              <li>
+<a href="#"> Design Engineer</a>
+              </li>
+              <li>
+<a href="#"> Analysis Engineer </a>
+              </li>
+              <li>
+<a href="#"> Junior Engineer </a>
+              </li>
+          </ul>
+      </li>
+  </ul>
+</nav>
+</div>
+<footer class="w-100 py-4">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1064.5483247518384!2d72.96723938358079!3d19.268159544313534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bba2e15f6c7b%3A0x20e1357d640bef7e!2sA.%20P.%20Shah%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1639860565885!5m2!1sen!2sin" width="500" height="280" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="col-md-6">
+              <h3>Address:</h3><p>Survey No, 12, Ghodbunder Rd, opp. Hypercity Mall, Bhawani Nagar, Kasarvadavali, Thane West, Thane, Maharashtra 400615</p>
+              <h3>Contact us at:</h3>
+              <p><a href="mailto:modifiedautoclub@apsit.edu.in">modifiedautoclub@apsit.edu.in</a></p>
+              <p>Prof. Amol Shinde (Faculty Advisor): <a href="tel:9730412857">9730412857</a></p>
+              <p>Yash Pawar (Captain): <a href="tel:9372877291">9372877291</a> </p>
+              <p>Shreyya Nair (Vice-captain): <a href="tel:9004169911">9004169911</a></p>
+          </div>
+      </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@300&display=swap" rel="stylesheet">  
+
+<title>Document</title>
+    <style>
+        body{
+            background-color: #434343;
+            background-image: url("./team_back.jpg");
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+        }
+        #nav{
+            background-color: rgb(12, 11, 11) !important;
+        }
+        #heading{
+            color: white;
+            text-align: center;
+        }
+        .carousel-item1{
+            position: relative;
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+        }
+
+        .img-fluid {
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.6);
+            line-height: 3;
+        }
+        .overlay h1{
+            color: white;
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .overlay h2{
+            color: white;
+            position: absolute;
+            top: 53%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .container{
+            color: white;
+        }
+        #intro p{
+            border: 2px solid white;
+            border-radius: 15px;
+            padding: 20px;
+            /* position: relative;
+            top: 25%; */
+            font-size: 18px;
+        }
+        footer{
+            background-color: rgb(0, 0, 0) !important;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+            <img src="./logos/MAC Logo-1.2.png" width="120" height="auto" class="d-inline-block align-top" alt="">
+            <img src="./logos/APsit logo.png" width="90" height="auto" class="d-inline-block align-top" alt="">
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-1" id="nav">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="./index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  TEAM
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="./mentor.html">Team Mentor</a>
+                  <a class="dropdown-item" href="./teamstructure.html">Team Structure</a>
+                  <a class="dropdown-item" href="./Members/pagination.html">Team Members</a>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <div class="container">
+        <img src="./car.jpg" class="img-fluid" alt="Responsive image" style="position:relative;">
+        <div class="overlay"><h1>Modified Auto Club</h1></div>
+    </div>
+    <video width="100%" height="100%" muted controls autoplay>
+        <source src="./weplaytowin.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./carousel1.jpg" alt="First slide">
+            <div class="overlay"><h1 style="font-family: 'Monoton', cursive; font-size: 50px; color: rgb(0, 255, 0); letter-spacing: 5px;">MODIFIED AUTO CLUB</h1><h2 style="margin-top: 5px;">#WEPLAYTOWIN</h2></div>
+          </div>
+          <div class="carousel-item">
+            <video autoplay loop muted class="d-block w-100"alt="Second slide">  <source src="./weplaytowin.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./carousel3.jpeg" alt="Third slide">
+            <div class="overlay"><h1 style="font-family: 'Monoton', cursive; font-size: 50px; color: rgb(0, 255, 0); letter-spacing: 5px;">MODIFIED AUTO CLUB</h1><h2>#WEPLAYTOWIN</h2></div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>  
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-md-5" id="">
+                <img src="./Team photo.JPG" alt="" style="max-width: 100%;margin-bottom:5px;">
+                <img src="./Vehicle_prototype.jpg" alt="" style="max-width: 100%;">
+            </div>
+            <div class="col-md-7" id="intro"style="text-align:justify">
+                <h1 id="heading">INTRODUCTION</h1>
+                <p>Modified Auto Club is a student engineering team founded in 2018 with the 
+                    sole aim of making a diference in the world by formulating and manufacturing electric vehicles in various formats like E-bikes, solar cars and Electric Formula Student Vehicles. We tend to propagate the power and benefits of 
+                    green energy, and spread its awareness and work on improving the current 
+                    technologies. This paired with the excellent facilities not only helps to 
+                    achieve our goals but also provide industrial experience to budding engineers at the very roots of their academic endeavours</p>
+                    <h1 id="heading">OUR VISION</h1>
+                    <p>Our vision is to provide automotive solutions using renewable energy alternatives namely solar power and Electricity. We aim in creating best technical solutions and advanced research in multiple fields encourage the team to realise their full potential by creating attainable goals. To produce high quality, cost effective systems that incorporate advanced technology and maintain high standards of engineering among students.</p>
+                </div>
+        </div>
+        </div>
+    </div>
+    <footer class="w-100 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1064.5483247518384!2d72.96723938358079!3d19.268159544313534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bba2e15f6c7b%3A0x20e1357d640bef7e!2sA.%20P.%20Shah%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1639860565885!5m2!1sen!2sin" width="500" height="280" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <h3>Address:</h3><p>Survey No, 12, Ghodbunder Rd, opp. Hypercity Mall, Bhawani Nagar, Kasarvadavali, Thane West, Thane, Maharashtra 400615</p>
+                    <h3>Contact us at:</h3>
+                    <p><a href="mailto:modifiedautoclub@apsit.edu.in">modifiedautoclub@apsit.edu.in</a></p>
+                    <p>Prof. Amol Shinde (Faculty Advisor): <a href="tel:9730412857">9730412857</a></p>
+                    <p>Yash Pawar (Captain): <a href="tel:9372877291">9372877291</a> </p>
+                    <p>Shreyya Nair (Vice-captain): <a href="tel:9004169911">9004169911</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
